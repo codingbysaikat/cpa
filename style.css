@@ -9,8 +9,7 @@
 }
 header{
     background: url(./images/Rectangle\ 1.png);
-    padding-block: 100px;
-    padding-inline: 100px;
+    padding-block: 50px;
     font-family:"Noto Serif", serif;
     font-style: normal;
 }
@@ -28,17 +27,113 @@ button{
    border-radius: 8px;
    
 }
-span{
+h3 span{
     font-weight: 800;
     font-size: 25px;
+    border-radius: 40% !important;
+    transform: translateY(-4px);
 }
 /* main body */
 .main-body{
     background: #c3aa81b5;
+}
+.single-card{
+    background: #9B8167;
+    padding: 5px;
+    height: auto;
+}
+@keyframes badge {
+    from {background-color: red;color: #fff;}
+    to {background-color: yellow;color: red;}
+
+  }
+.badge{
+    padding: 3px;
+    background: red;
+    font-size: 10px;
+    animation-name: badge;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 h2{
     text-align: center;
     padding: 10px;
     font-family:"Noto Serif", serif;
 }
-    
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a p{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: justify !important;
+    margin: 0;
+}
+.thumnials img{
+    width: 100%;
+    height: 150px;
+}
+a  h3{
+    font-size: 18px;
+    text-align: justify;
+}
+.main-body p{
+    text-align: center;
+    margin-bottom: 0;
+}
+.title2{
+    padding-bottom: 0px !important;
+    margin-bottom: 0;
+}
+.special{
+    width: 350px;
+    height: 250px;
+    float: right;
+}
+.special-offer{
+   
+}
+.special-offer p{
+    text-align: justify;
+   
+}
+.main-offer{
+    background: #9B8167;
+    margin-block: 10px;
+    padding-block: 10px;
+}
+.offer-btn{
+    display: inline-block;
+    margin-block: 5px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+.offer-btn:hover{
+    background: #fff;
+    color: #9B8167;
+}
+@media screen and (max-width: 821px) {
+    .special{
+        width: 300px;
+        height: 250px;
+        float: right;
+    }
+  }
+  @media screen and (max-width: 765px) {
+    .col-md-3{
+        margin-block: 5px;
+    }
+    .special{
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+  @media screen and (max-width: 425px) {
+    button{
+        padding: 6px;
+    }
+
+  }
