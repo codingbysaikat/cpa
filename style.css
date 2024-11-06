@@ -116,10 +116,19 @@ a  h3{
     margin-block: 5px;
     padding: 5px;
     border: 1px solid #fff;
+    animation-name: offer;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 .offer-btn:hover{
     background: #fff;
     color: #9B8167;
+}
+@keyframes offer{
+    from{background: none;color: #fff;}
+    to{background: #fff;color: #9B8167;}
 }
 @media screen and (max-width: 821px) {
     .special{
