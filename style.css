@@ -9,6 +9,7 @@
 }
 header{
     background: url(./images/Rectangle\ 1.png);
+    background-size: cover;
     padding-block: 50px;
     font-family:"Noto Serif", serif;
     font-style: normal;
@@ -98,6 +99,12 @@ a  h3{
     width: 350px;
     height: 250px;
     float: right;
+}
+.special:hover{
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
+    transition: 0.5s; 
 }
 .special-offer{
    
