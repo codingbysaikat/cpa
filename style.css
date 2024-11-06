@@ -42,6 +42,13 @@ h3 span{
     padding: 5px;
     height: auto;
 }
+.single-card:hover{
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
+    transition: 0.5s; 
+
+}
 @keyframes badge {
     from {background-color: red;color: #fff;}
     to {background-color: yellow;color: red;}
