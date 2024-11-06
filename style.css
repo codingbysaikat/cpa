@@ -10,6 +10,7 @@
 header{
     background: url(./images/Rectangle\ 1.png);
     background-size: cover;
+    background-repeat: no-repeat;
     padding-block: 50px;
     font-family:"Noto Serif", serif;
     font-style: normal;
