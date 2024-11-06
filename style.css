@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #583A12; */
+    color: #fff;
+
+}
+header{
+    background: url(./images/Rectangle\ 1.png);
+    padding-block: 100px;
+    padding-inline: 100px;
+    font-family:"Noto Serif", serif;
+    font-style: normal;
+}
+header h1{
+    padding: 0 !important;
+}
+.all-btn{
+    margin-inline: auto !important;
+    text-align: center;
+}
+button{
+   color: #9B8167; 
+   padding: 10px;
+   border: none;
+   border-radius: 8px;
+   
+}
+span{
+    font-weight: 800;
+    font-size: 25px;
+}
+/* main body */
+.main-body{
+    background: #c3aa81b5;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    font-family:"Noto Serif", serif;
+}
+    
