@@ -28,3 +28,21 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "OFFER TIME IS EXPIRE";
   }
 }, 1000);
+function detectDevice() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+  if (/android/i.test(userAgent)) {
+      return "Android";
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "iOS";
+  } else {
+      return "Desktop";
+  }
+}
+const destop = document.querySelectorAll('.destop');
+if(detectDevice()=="Desktop"){
+  destop.forEach(element => {
+    element.style.display = 'flex';
+  });
+}
+console.log(detectDevice());

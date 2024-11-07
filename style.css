@@ -7,6 +7,9 @@
     color: #fff;
 
 }
+.destop , .main-offer{
+    display: none;
+}
 header{
     background: url(./images/Rectangle\ 1.png);
     background-size: cover;
@@ -17,10 +20,19 @@ header{
 }
 header h1{
     padding: 0 !important;
+    animation: upflow;
+    animation-duration: 1s;
+}
+.sub-title{
+    animation: upflow;
+    animation-duration: 1s;
 }
 .all-btn{
     margin-inline: auto !important;
     text-align: center;
+    animation: upflow;
+    animation-duration: 1.5s;
+
 }
 button{
    color: #9B8167; 
@@ -38,6 +50,10 @@ h3 span{
 /* main body */
 .main-body{
     background: #c3aa81b5;
+}
+.offer-cards{
+    animation: upflow;
+    animation-duration: 2s;
 }
 .single-card{
     background: #9B8167;
@@ -69,6 +85,8 @@ h2{
     text-align: center;
     padding: 10px;
     font-family:"Noto Serif", serif;
+    animation: upflow;
+    animation-duration: 1s;
 }
 a{
     color: #fff;
@@ -91,10 +109,13 @@ a  h3{
 .main-body p{
     text-align: center;
     margin-bottom: 0;
+ 
 }
 .title2{
     padding-bottom: 0px !important;
     margin-bottom: 0;
+    animation: upflow;
+    animation-duration: 1s;
 }
 .special{
     width: 350px;
@@ -107,9 +128,6 @@ a  h3{
     transform: scale(1.03);
     transition: 0.5s; 
 }
-.special-offer{
-   
-}
 .special-offer p{
     text-align: justify;
    
@@ -118,6 +136,8 @@ a  h3{
     background: #9B8167;
     margin-block: 10px;
     padding-block: 10px;
+    animation: upflow;
+    animation-duration: 1s;
 }
 .offer-btn{
     display: inline-block;
@@ -134,9 +154,17 @@ a  h3{
     background: #fff;
     color: #9B8167;
 }
+footer{
+    background:#c3aa81b5;
+  
+}
 @keyframes offer{
     from {background-color: red;color: #fff;}
     to {background-color: yellow;color: red;}
+}
+@keyframes upflow{
+    from{transform: translateY(30px);}
+    to{transform: translateY(0);}
 }
 @media screen and (max-width: 821px) {
     .special{
