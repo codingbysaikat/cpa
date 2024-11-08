@@ -57,3 +57,13 @@ if(detectDevice()=="Android"){
       element.style.display = 'flex';
     });
 }
+function getTodaysDate() {
+  const today = new Date();
+  
+  const day = String(today.getDate()).padStart(2, '0'); // Get day and add leading zero if needed
+  const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-indexed, so add 1
+  const year = today.getFullYear();
+  
+  return `${month}-${day}-${year}`; // Format as MM/DD/YYYY
+}
+document.getElementById("today").innerHTML = "Last Date: "+getTodaysDate()+" 🕖";
