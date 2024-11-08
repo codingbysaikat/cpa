@@ -40,9 +40,20 @@ function detectDevice() {
   }
 }
 const destop = document.querySelectorAll('.destop');
+const android = document.querySelectorAll('.android');
+const ios = document.querySelectorAll('.ios');
 if(detectDevice()=="Desktop"){
   destop.forEach(element => {
     element.style.display = 'flex';
   });
 }
-console.log(detectDevice());
+if(detectDevice()=="Android"){
+  android.forEach(element => {
+    element.style.display = 'flex';
+  });
+}
+  if(detectDevice()=="iOS"){
+    ios.forEach(element => {
+      element.style.display = 'flex';
+    });
+}

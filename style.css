@@ -7,7 +7,7 @@
     color: #fff;
 
 }
-.destop , .main-offer{
+.destop ,.android,.ios, .main-offer{
     display: none;
 }
 header{
@@ -22,10 +22,12 @@ header h1{
     padding: 0 !important;
     animation: upflow;
     animation-duration: 1s;
+    text-shadow: 2px 2px 5px #ff8000;
 }
 .sub-title{
     animation: upflow;
     animation-duration: 1s;
+    text-shadow: 2px 2px 5px #ff8000;
 }
 .all-btn{
     margin-inline: auto !important;
@@ -46,6 +48,7 @@ h3 span{
     font-size: 25px;
     border-radius: 40% !important;
     transform: translateY(-4px);
+    
 }
 /* main body */
 .main-body{
@@ -87,6 +90,7 @@ h2{
     font-family:"Noto Serif", serif;
     animation: upflow;
     animation-duration: 1s;
+    text-shadow: 2px 2px 5px #ff8000;
 }
 a{
     color: #fff;
@@ -150,17 +154,17 @@ a  h3{
     animation-direction: alternate;
 
 }
-.offer-btn:hover{
-    background: #fff;
-    color: #9B8167;
-}
 footer{
     background:#c3aa81b5;
   
 }
 @keyframes offer{
-    from {background-color: red;color: #fff;}
-    to {background-color: yellow;color: red;}
+    from {background-color: red;color: #fff; -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari 3-8 */
+        transform: scale(1);}
+    to {background-color: yellow;color: red;-ms-transform: scale(1.05); /* IE 9 */
+        -webkit-transform: scale(1.05); /* Safari 3-8 */
+        transform: scale(1.05);}
 }
 @keyframes upflow{
     from{transform: translateY(30px);}
@@ -186,6 +190,12 @@ footer{
   @media screen and (max-width: 425px) {
     button{
         padding: 6px;
+    }
+
+  }
+  @media screen and (max-width: 383px) {
+    button{
+       font-size: 13px;
     }
 
   }
