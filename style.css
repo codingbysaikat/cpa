@@ -5,6 +5,7 @@
     box-sizing: border-box;
     /* background: #583A12; */
     color: #fff;
+    
 
 }
 .destop ,.android,.ios, .main-offer{
@@ -62,6 +63,7 @@ h3 span{
     background: #9B8167;
     padding: 5px;
     height: auto;
+    margin-block: 10px;
 }
 .single-card:hover{
     -ms-transform: scale(1.03); /* IE 9 */
@@ -117,9 +119,10 @@ a  h3{
 }
 .title2{
     padding-bottom: 0px !important;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     animation: upflow;
     animation-duration: 1s;
+    text-align: center;
 }
 .special{
     width: 350px;
@@ -138,7 +141,6 @@ a  h3{
 }
 .main-offer{
     background: #9B8167;
-    margin-block: 10px;
     padding-block: 10px;
     animation: upflow;
     animation-duration: 1s;
